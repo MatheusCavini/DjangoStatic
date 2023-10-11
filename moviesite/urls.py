@@ -22,5 +22,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('', include('staticpages.urls')), # modifique esta linha
+    path('movies/', include('movies.urls')), # adicionar esta linha
     path('admin/', admin.site.urls),
 ]
