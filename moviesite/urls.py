@@ -17,7 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path # modificar esta linha
 
+from django.contrib import admin
+from django.urls import include, path
+
 urlpatterns = [
-    path('staticpages/', include('staticpages.urls')), # adicionar esta linha
+    path('', include('staticpages.urls')), # modifique esta linha
     path('admin/', admin.site.urls),
 ]
